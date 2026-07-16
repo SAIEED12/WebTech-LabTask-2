@@ -3,9 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div class="container">
+        <h2>Smart Event Management Ltd.</h2>
+        <h4>Online Registration Portal</h4>
+        <form id="form">
+            <label for="fname">First Name</label>
+            <input type="text" name="fname" id="fname" placeholder="Enter Your First Name">
+            <small id="fnameError" class="error"></small>
+
+            <label for="lname">Last Name</label>
+            <input type="text" name="lname" id="lname" placeholder="Enter Your Last Name">
+            <small id="lnameError" class="error"></small>
+
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email" placeholder="Ente Your E-mail Address">
+            <small id="emailError" class="error"></small>
+
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" placeholder="Enter Your Password">
+            <small id="passwordError" class="error"></small>
+
+            <label>Gender</label>
+            <div class="radio">
+
+                <input type="radio" id="male" name="gender" value="Male">
+                <label for="male">Male</label>
+
+                <input type="radio" id="female" name="gender" value="Female">
+                <label for="female">Female</label>
+
+            </div>
+
+            <small id="genderError" class="error"></small>
+
+            <label>Interests</label>
+
+            <div class="checkbox">
+
+                <input type="checkbox" id="ai" name="interests" value="Ai">
+                <label for="ai">Ai</label>
+
+                <input type="checkbox" id="web" name="interests" value="Web Dev">
+                <label for="web">Web Dev</label>
+
+                <input type="checkbox" id="cyber" name="interests" value="Cybersecurity">
+                <label for="cyber">Cybersecurity</label>
+
+            </div>
+
+            <small id="interestError" class="error"></small>
+
+             <label for="department">Department</label>
+
+
+            <select id="department">
+                <option value="">-- Select Your Department --</option>
+                <option value="CSE">CSE</option>
+                <option value="EEE">EEE</option>
+                <option value="IPE">IPE</option>
+                <option value="Others">Others</option>
+            </select>
+
+            <small id="departmentError" class="error"></small>
+
+            <label for="about">About Yourself</label>
+
+            <textarea id="about" rows="4"placeholder="Tell Us About Yourself"></textarea>
+            <small id="aboutError" class="error"></small>
+
+            <button type="submit">Register</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
